@@ -1,31 +1,24 @@
+/* your-styles.css */
+
+/* Other styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
-@layer base {
-  body {
-    @apply font-[Playfair];
-    @apply bg-[#0c1016];
-  }
-  li {
-    @apply px-4;
-    @apply cursor-pointer;
-    @apply list-none;
-    position: relative;
-  }
-  li::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #fff;
-    transition: width 0.3s ease, left 0.3s ease;
-  }
-  li:hover::after {
-    width: 100%;
-    left: 0;
-  }
+body {
+  @apply font-[Playfair];
+}
+
+body::-webkit-scrollbar {
+  width: 0.1px;
+}
+
+li {
+  @apply px-4;
+  @apply cursor-pointer;
+  @apply list-none;
+  position: relative;
 }
