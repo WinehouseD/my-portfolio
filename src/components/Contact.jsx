@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../email-form";
 
 const Contact = () => {
   const validationSchema = Yup.object({
@@ -20,14 +21,14 @@ const Contact = () => {
     },
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
-      const formElement = document.getElementById("yourFormId"); // replace "yourFormId" with the actual ID of your form
+      const formElement = document.getElementById("yourFormId");
 
       try {
         await emailjs.sendForm(
-          "service_mwkjmms",
-          "template_3jc14ue",
+          SERVICE_ID,
+          TEMPLATE_ID,
           formElement,
-          "deA2WYSdM8usmQArw"
+          PUBLIC_KEY
         );
 
         resetForm();

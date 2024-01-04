@@ -31,7 +31,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            style={{ width: "2rem", cursor: "pointer" }}
+            style={{ width: "2.3rem", cursor: "pointer" }}
           />
         </Link>
       </div>

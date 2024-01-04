@@ -7,6 +7,8 @@ import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
+import Animation from "./components/background/Animation";
+import Footer from "./components/Footer";
 
 function App() {
   const [showLoader, setShowLoader] = useState(false);
@@ -26,13 +28,14 @@ function App() {
   return (
     <div>
       {showLoader && <Loader />}
-
+      {/* <Animation /> */}
       <ProgressBar />
       <Navbar />
       <Home />
       <About />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }
