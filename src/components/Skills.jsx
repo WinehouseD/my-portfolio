@@ -17,7 +17,7 @@ const Skills = () => {
             TOOLS AND TECHNOLOGIES
           </p>
         </div>
-        <div className="bg-[#11161f] w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="bg-[#11161f] w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 sm:px-14">
           <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
             <img
               className="w-20 mx-auto"

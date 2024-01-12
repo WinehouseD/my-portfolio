@@ -96,7 +96,7 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="text-gray-300 border-2 hover:border-[#f00] px-4 py-3 my-8 mx-auto flex items-center"
+          className="text-gray-300 border-2 px-4 py-3 my-8 mx-auto flex items-center transition duration-500 ease-in-out hover:border-[#f00]"
         >
           Let's Collaborate
         </button>

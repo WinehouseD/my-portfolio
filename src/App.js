@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Animation from "./components/background/Animation";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 function App() {
   const [showLoader, setShowLoader] = useState(false);
@@ -34,6 +35,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </div>
