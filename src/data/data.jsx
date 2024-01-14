@@ -1,5 +1,6 @@
 import weatherqr from "../assets/weather-qr.svg";
 import boseqr from "../assets/bose-qr.svg";
+import portfolioqr from "../assets/portfolio-qr.svg";
 import BoseImage from "../assets/Bose.png";
 import WeatherImage from "../assets/WeatherTrack.png";
 import PortfolioImage from "../assets/Portfolio.png";
@@ -31,8 +32,8 @@ export const data = [
     description:
       "Crafted a sleek and responsive portfolio website to showcase my skills, achievements, and projects.",
     techStack: "// JS, Tailwind CSS, Formik",
-    codeLink: "https://github.com/your-username/Portfolio",
+    codeLink: "https://github.com/WinehouseD/portfolio",
     liveLink: "http://WinehouseD.github.io/portfolio",
-    qrCode: null,
+    qrCode: portfolioqr,
   },
 ];

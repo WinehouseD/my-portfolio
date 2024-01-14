@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       {showLoader && <Loader />}
-      {/* <Animation /> */}
+      <Animation />
       <ProgressBar />
       <Navbar />
       <Home />
