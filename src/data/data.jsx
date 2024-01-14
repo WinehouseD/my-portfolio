@@ -32,7 +32,7 @@ export const data = [
       "Crafted a sleek and responsive portfolio website to showcase my skills, achievements, and projects.",
     techStack: "// JS, Tailwind CSS, Formik",
     codeLink: "https://github.com/your-username/Portfolio",
-    liveLink: "https://your-portfolio-live-url.netlify.app/",
+    liveLink: "http://WinehouseD.github.io/portfolio",
     qrCode: null,
   },
 ];
