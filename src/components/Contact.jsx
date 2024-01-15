@@ -58,7 +58,7 @@ const Contact = () => {
         <input
           type="text"
           name="user_name"
-          className="bg-gray-600 p-2"
+          className="bg-gray-600 p-2 mt-2"
           placeholder="Name"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -71,7 +71,7 @@ const Contact = () => {
         <input
           type="email"
           name="user_email"
-          className="my-4 p-2 bg-gray-600"
+          className="mt-2 p-2 bg-gray-600"
           placeholder="Email"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -83,7 +83,7 @@ const Contact = () => {
 
         <textarea
           name="message"
-          className="bg-gray-600 p-2"
+          className="bg-gray-600 p-2 mt-2"
           rows="10"
           placeholder="Message"
           onChange={formik.handleChange}
