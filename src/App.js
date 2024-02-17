@@ -15,29 +15,29 @@ function App() {
   const [showLoader, setShowLoader] = useState(false);
 
   useEffect(() => {
-    if (performance.navigation.type === 1) {
+    const timeout = setTimeout(() => {
       setShowLoader(true);
+    }, 6000);
 
-      const timeout = setTimeout(() => {
-        setShowLoader(false);
-      }, 6000);
-
-      return () => clearTimeout(timeout);
-    }
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
     <div>
-      {showLoader && <Loader />}
-      <Animation />
-      <ProgressBar />
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      {!showLoader && <Loader />}
+      {showLoader && (
+        <>
+          <Animation />
+          <ProgressBar />
+          <Navbar />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

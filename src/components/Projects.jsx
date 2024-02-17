@@ -42,7 +42,7 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   onClick={() => openModal(project)}
-                  loading="lazy"
+                  rel="preload"
                 />
                 <div className="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-80 bg-[#3d0000] flex flex-row justify-center items-center">
                   <a

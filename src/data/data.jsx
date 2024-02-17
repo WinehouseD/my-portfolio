@@ -4,6 +4,7 @@ import portfolioqr from "../assets/portfolio-qr.svg";
 import BoseImage from "../assets/Bose.png";
 import WeatherImage from "../assets/WeatherTrack.png";
 import PortfolioImage from "../assets/Portfolio.png";
+import BlurredBg from "../assets/blurred-bg.jpg";
 
 export const data = [
   {
@@ -31,9 +32,16 @@ export const data = [
     title: "Portfolio",
     description:
       "Crafted a sleek and responsive portfolio website to showcase my skills, achievements, and projects.",
-    techStack: "// JS, Tailwind CSS, Formik",
+    techStack: "// JS, React, Tailwind CSS, Formik",
     codeLink: "https://github.com/WinehouseD/portfolio",
     liveLink: "http://WinehouseD.github.io/portfolio",
     qrCode: portfolioqr,
+  },
+  {
+    image: BlurredBg,
+    title: "Restaurant",
+    description: "Coming soon...",
+    techStack:
+      "// TS, React, Taiwind CSS, MongoDB, Google Maps API, AWS, Prisma",
   },
 ];
