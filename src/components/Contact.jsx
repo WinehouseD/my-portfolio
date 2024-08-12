@@ -1,25 +1,22 @@
 import React from "react";
 import { useFormik } from "formik";
-import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../email-form";
+import { contactValidationSchema } from "../helpers/validationSchemas";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
 const Contact = () => {
-  const validationSchema = Yup.object({
-    user_name: Yup.string().required("Name is required"),
-    user_email: Yup.string()
-      .email("Invalid email address")
-      .required("Email is required"),
-    message: Yup.string().required("Message is required"),
-  });
-
   const formik = useFormik({
     initialValues: {
       user_name: "",
       user_email: "",
       message: "",
     },
-    validationSchema: validationSchema,
+    validationSchema: contactValidationSchema,
     onSubmit: async (values, { resetForm }) => {
       const formElement = document.getElementById("yourFormId");
 
@@ -32,9 +29,9 @@ const Contact = () => {
         );
 
         resetForm();
-        window.alert("Message sent successfully!");
+        toast.success("Message sent successfully!");
       } catch (error) {
-        console.error("Error sending email:", error);
+        toast.error("Error sending email. Please try again later.");
       }
     },
   });
@@ -101,6 +98,7 @@ const Contact = () => {
           Let's Collaborate
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };

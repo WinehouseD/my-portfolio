@@ -10,7 +10,7 @@ const Home = () => {
             className="hero glitch layers"
             data-text="Frontend React Developer"
           >
-            <span>Frontend React Developer</span>
+            <span>Front-End React Developer</span>
           </h2>
         </div>
       </div>

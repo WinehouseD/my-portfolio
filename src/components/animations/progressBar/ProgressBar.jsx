@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import "tailwindcss/tailwind.css";
-import "./progressBar.css";
 
 const ProgressBar = () => {
   useEffect(() => {
@@ -22,8 +20,8 @@ const ProgressBar = () => {
   }, []);
 
   return (
-    <div className="progress-container">
-      <div className="progress-bar" id="myBar"></div>
+    <div className="w-full bg-transparent fixed top-0 z-50">
+      <div className="h-0.5 bg-red-600 w-0" id="myBar"></div>
     </div>
   );
 };

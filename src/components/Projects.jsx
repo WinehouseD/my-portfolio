@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { data } from "../data/data.jsx";
 import live from "../assets/live.svg";
 import eye from "../assets/eye.svg";
@@ -9,15 +9,15 @@ const Projects = () => {
 
   const projects = data;
 
-  const openModal = (project) => {
+  const openModal = useCallback((project) => {
     setCurrentProject(project);
     setModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setCurrentProject(null);
     setModalOpen(false);
-  };
+  }, []);
 
   return (
     <div
@@ -38,7 +38,7 @@ const Projects = () => {
             >
               <div className="relative">
                 <img
-                  className="w-full object-contain cursor-pointer"
+                  className="w-full h-full object-contain cursor-pointer"
                   src={project.image}
                   alt={project.title}
                   onClick={() => openModal(project)}
@@ -53,7 +53,7 @@ const Projects = () => {
                     <img
                       src={eye}
                       alt="Live"
-                      className="w-16 p-2 zoom"
+                      className="w-16 h-16 p-2 zoom"
                       loading="lazy"
                     />
                   </a>
@@ -65,7 +65,7 @@ const Projects = () => {
                     <img
                       src={live}
                       alt="Live"
-                      className="w-16 p-2 zoom"
+                      className="w-16 h-16 p-2 zoom"
                       loading="lazy"
                     />
                   </a>
@@ -73,7 +73,7 @@ const Projects = () => {
                     <img
                       src={project.qrCode}
                       alt={`${project.title} QR`}
-                      className="w-14 p-2 cursor-pointer zoom"
+                      className="w-14 h-14 p-2 cursor-pointer zoom"
                       onClick={() => openModal(project)}
                       loading="lazy"
                     />
@@ -100,7 +100,7 @@ const Projects = () => {
             <img
               src={currentProject.qrCode}
               alt={`${currentProject.title} QR`}
-              className="w-44 mx-auto"
+              className="w-44 h-44 mx-auto"
             />
             <div className="flex justify-center mt-4">
               <button

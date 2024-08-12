@@ -25,17 +25,15 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-[4rem] flex justify-between items-center px-4 bg-[rgba(0,0,0,0.1)] text-gray-300 backdrop-blur-md z-10">
-      {" "}
       <div>
         <Link to="home" smooth={true} duration={500}>
           <img
             src={logo}
             alt="logo"
-            style={{ width: "2.3rem", cursor: "pointer" }}
+            style={{ width: "2.3rem", height: "2.3rem", cursor: "pointer" }}
           />
         </Link>
       </div>
-      {/* menu */}
       <ul className="hidden md:flex text-lg">
         <li>
           <Link to="home" smooth={true} duration={500}>
@@ -72,7 +70,6 @@ const Navbar = () => {
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </motion.div>
-      {/* mobile menu */}
       <AnimatePresence>
         {nav && (
           <motion.ul
@@ -125,7 +122,6 @@ const Navbar = () => {
           </motion.ul>
         )}
       </AnimatePresence>
-      {/* social media */}
       <div className="hidden lg:flex fixed flex-col top-[300%] left-0 ">
         <ul>
           <li>
@@ -136,7 +132,11 @@ const Navbar = () => {
               rel="noreferrer"
               title="LinkedIn"
             >
-              <img src={linkedin} alt="linkedin" style={{ width: "1.8rem" }} />
+              <img
+                src={linkedin}
+                alt="linkedin"
+                style={{ width: "1.8rem", height: "1.8rem" }}
+              />
             </a>
           </li>
           <li>
@@ -150,7 +150,11 @@ const Navbar = () => {
               <img
                 src={github}
                 alt="github"
-                style={{ width: "1.8rem", marginTop: "1.5rem" }}
+                style={{
+                  width: "1.8rem",
+                  height: "1.8rem",
+                  marginTop: "1.5rem",
+                }}
               />
             </a>
           </li>
@@ -167,6 +171,7 @@ const Navbar = () => {
                 alt="email"
                 style={{
                   width: "1.8rem",
+                  height: "1.8rem",
                   marginTop: "1.5rem",
                 }}
               />
@@ -184,7 +189,8 @@ const Navbar = () => {
                 src={resume}
                 alt="resume"
                 style={{
-                  width: "1.7rem",
+                  width: "1.5rem",
+                  height: "1.5rem",
                   marginTop: "1.5rem",
                 }}
               />

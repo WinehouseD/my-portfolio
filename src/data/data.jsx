@@ -1,10 +1,10 @@
 import weatherqr from "../assets/weather-qr.svg";
 import boseqr from "../assets/bose-qr.svg";
 import portfolioqr from "../assets/portfolio-qr.svg";
-import BoseImage from "../assets/Bose.png";
-import WeatherImage from "../assets/WeatherTrack.png";
-import PortfolioImage from "../assets/Portfolio.png";
-import BlurredBg from "../assets/blurred-bg.jpg";
+import BoseImage from "../assets/Bose.webp";
+import WeatherImage from "../assets/WeatherTrack.webp";
+import PortfolioImage from "../assets/Portfolio.webp";
+import BlurredBg from "../assets/blurred-bg.webp";
 
 export const data = [
   {
@@ -39,9 +39,14 @@ export const data = [
   },
   {
     image: BlurredBg,
+    title: "TranquilTravel",
+    description: "Coming soon...",
+    techStack: "// JS, React, Tailwind CSS, Redux, Radix UI, Zod",
+  },
+  {
+    image: BlurredBg,
     title: "Restaurant",
     description: "Coming soon...",
-    techStack:
-      "// TS, React, Taiwind CSS, MongoDB, Google Maps API, AWS, Prisma",
+    techStack: "// TS, React, Taiwind CSS, MongoDB, Google Maps API, Prisma",
   },
 ];

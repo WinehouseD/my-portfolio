@@ -1,7 +1,7 @@
 import React from "react";
-import "./animation.css";
+import "./BackgroundAnimation.css";
 
-function Animation() {
+function BackgroundAnimation() {
   return (
     <div>
       <div className="firefly"></div>
@@ -23,4 +23,4 @@ function Animation() {
   );
 }
 
-export default Animation;
+export default BackgroundAnimation;
