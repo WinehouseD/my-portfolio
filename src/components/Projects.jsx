@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
-import { data } from "../data/data.jsx";
-import live from "../assets/live.svg";
+import { data } from "../data/data";
 import eye from "../assets/eye.svg";
+import github from "../assets/github.svg";
 
 const Projects = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full sm:h-screen bg-[#11161f] text-gray-300"
+      className="w-full min-h-screen bg-[#11161f] text-gray-300"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="sm:text-center pb-8 pl-4 bg-[#11161f] flex justify-center">
@@ -38,15 +38,15 @@ const Projects = () => {
             >
               <div className="relative">
                 <img
-                  className="w-full h-full object-contain cursor-pointer"
+                  className="w-full h-auto object-contain cursor-pointer"
                   src={project.image}
                   alt={project.title}
                   onClick={() => openModal(project)}
-                  rel="preload"
+                  loading="lazy"
                 />
                 <div className="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-80 bg-[#3d0000] flex flex-row justify-center items-center">
                   <a
-                    href={project.codeLink}
+                    href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -58,12 +58,12 @@ const Projects = () => {
                     />
                   </a>
                   <a
-                    href={project.liveLink}
+                    href={project.codeLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
-                      src={live}
+                      src={github}
                       alt="Live"
                       className="w-16 h-16 p-2 zoom"
                       loading="lazy"
@@ -85,6 +85,7 @@ const Projects = () => {
                   {project.title}
                 </h1>
                 <p className="mt-2 text-gray-300">{project.description}</p>
+                <p className="mt-2 text-gray-300">{project.credentials}</p>
                 <p className="font-semibold pt-2 tracking-widest">
                   {project.techStack}
                 </p>

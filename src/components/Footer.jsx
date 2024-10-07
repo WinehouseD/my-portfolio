@@ -54,7 +54,8 @@ function Footer() {
         </li>
       </ul>
       <div className="mt-4 text-sm text-gray-300 tracking-widest">
-        Designed & Built by Diana Kit
+        Designed & Built by <a href="https://www.linkedin.com/in/diana-k-a6424827b/" className="hover:underline hover:underline-offset-4 text-red-500">Diana Kit</a>
+        <p>© All rights reserved</p>
       </div>
     </div>
   );

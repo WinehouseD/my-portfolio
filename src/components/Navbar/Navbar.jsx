@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logo_nav.svg";
+import logo from "../../assets/logo_nav.svg";
 import { motion, AnimatePresence } from "framer-motion";
-import github from "../assets/github.svg";
-import email from "../assets/gmail.svg";
-import linkedin from "../assets/linkedin.svg";
-import resume from "../assets/resume.svg";
+import github from "../../assets/github.svg";
+import email from "../../assets/gmail.svg";
+import linkedin from "../../assets/linkedin.svg";
+import resume from "../../assets/resume.svg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {

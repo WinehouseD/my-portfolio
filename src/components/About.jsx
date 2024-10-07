@@ -20,10 +20,10 @@ const About = () => {
           <div>
             <p className="pb-2 sm:text-lg">
               I'm a dedicated Front-End React Developer based in Lviv, Ukraine.
-              My professional objective is to secure a position within a
-              innovative company, enabling me to contribute substantively to its
-              success by delivering tangible business value. Simultaneously, I
-              am driven to further enhance my skills and expertise in software
+              My professional objective is to secure a position within an
+              innovative company, enabling me to contribute substantively to
+              its success by delivering tangible business value. Simultaneously,
+              I am driven to further enhance my skills and expertise in software
               development.
             </p>
             <p className="pb-2">

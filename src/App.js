@@ -4,13 +4,13 @@ import ProgressBar from "./components/animations/progressBar/ProgressBar";
 import Loader from "./components/animations/loader/Loader";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact";
 import BackgroundAnimation from "./components/animations/background/BackgroundAnimation";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
-import useLoader from "./components/hooks/useLoader";
+import useLoader from "./hooks/useLoader";
 
 function App() {
   const showLoader = useLoader();

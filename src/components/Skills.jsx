@@ -1,14 +1,12 @@
 import React from "react";
-import HTML from "../assets/html.svg";
 import JavaScript from "../assets/js.svg";
-import ReactImg from "../assets/react.svg";
-import Node from "../assets/node.svg";
-import FireBase from "../assets/firebase.svg";
+import ReactIcon from "../assets/react.svg";
+import Redux from "../assets/redux.svg";
+import ReactNative from "../assets/react-native.svg";
 import Tailwind from "../assets/tailwind.svg";
+import AWS from '../assets/aws.svg'
 import MUI from "../assets/mui.svg";
 import TypeScript from "../assets/ts.svg";
-import Redux from "../assets/redux.svg";
-import Next from "../assets/nextjs.svg";
 
 const Skills = () => {
   return (
@@ -37,48 +35,29 @@ const Skills = () => {
             <p className="my-2 text-sm">TYPESCRIPT</p>
           </div>
           <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img className="w-20 h-20 mx-auto" src={Node} alt="Node icon" />
-            <p className="my-2 text-sm">NODE JS</p>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img
-              className="w-20 h-20 mx-auto"
-              src={ReactImg}
-              alt="React icon"
-            />
+            <img className="w-20 h-20 mx-auto" src={ReactIcon} alt="React icon" />
             <p className="my-2 text-sm">REACT</p>
           </div>
           <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img className="w-20 h-20 mx-auto" src={HTML} alt="HTML icon" />
-            <p className="my-4">HTML</p>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img
-              className="w-20 h-20 mx-auto"
-              src={Tailwind}
-              alt="Tailwind icon"
-            />
-            <p className="my-2 text-sm">TAILWIND</p>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img className="w-20 h-20 mx-auto" src={MUI} alt="MUI icon" />
-            <p className="my-2 text-sm">MATERIAL UI</p>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img
-              className="w-20 h-20 mx-auto"
-              src={FireBase}
-              alt="FireBase icon"
-            />
-            <p className="my-2 text-sm">FIREBASE</p>
+            <img className="w-20 h-20 mx-auto" src={ReactNative} alt="React Native icon" />
+            <p className="my-2 text-sm">REACT NATIVE</p>
           </div>
           <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
             <img className="w-20 h-20 mx-auto" src={Redux} alt="Redux icon" />
             <p className="my-2 text-sm">REDUX</p>
           </div>
           <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
-            <img className="w-20 h-20 mx-auto" src={Next} alt="Next icon" />
-            <p className="my-2 text-sm">NEXT</p>
+            <img className="w-20 h-20 mx-auto" src={Tailwind} alt="Tailwind icon" />
+            <p className="my-2 text-sm">TAILWIND</p>
+          </div>
+          <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
+            <img className="w-20 h-20 mx-auto" src={MUI} alt="MUI icon" />
+            <p className="my-2 text-sm">MATERIAL UI</p>
+          </div>
+         
+          <div className="shadow-lg shadow-[#040c16] hover:shadow-[#f00] duration-500">
+            <img className="w-20 h-20 mx-auto" src={AWS} alt="AWS icon" />
+            <p className="my-4">AWS</p>
           </div>
         </div>
       </div>
