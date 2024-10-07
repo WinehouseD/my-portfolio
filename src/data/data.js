@@ -46,8 +46,8 @@ export const data = [
     description:
       "Sleek and responsive portfolio website to showcase my skills, achievements, and projects.",
     techStack: "// React, JS, Tailwind CSS, Formik/Yup, Jest, EmailJS, GitHub Pages",
-    codeLink: "https://github.com/WinehouseD/portfolio",
-    liveLink: "http://WinehouseD.github.io/portfolio",
+    codeLink: "https://github.com/WinehouseD/my-portfolio",
+    liveLink: "http://WinehouseD.github.io/my-portfolio",
     qrCode: portfolioqr,
   },
   {
