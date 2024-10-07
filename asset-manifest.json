@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8588b3a2.css",
+    "main.js": "/portfolio/static/js/main.a6d85050.js",
+    "static/media/Booking.png": "/portfolio/static/media/Booking.59b7c554b82e48030fef.png",
+    "static/media/WeatherTrack.png": "/portfolio/static/media/WeatherTrack.a20c5562916dd3f01f3a.png",
+    "static/media/portfolio-qr.png": "/portfolio/static/media/portfolio-qr.e6e21b5c11ff519bf008.png",
+    "static/media/exchangerate-qr.png": "/portfolio/static/media/exchangerate-qr.c0ecf76485c53db5a958.png",
+    "static/media/weather-qr.png": "/portfolio/static/media/weather-qr.0fce85519a450b7b3777.png",
+    "static/media/booking-qr.png": "/portfolio/static/media/booking-qr.14b178e5635734d7a459.png",
+    "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.0c3969cfbaf987913559.png",
+    "static/media/MagicExchange.png": "/portfolio/static/media/MagicExchange.c3bf5b4df3efecee756c.png",
+    "static/media/blurred-bg.webp": "/portfolio/static/media/blurred-bg.e0fd6257685d731e2c31.webp",
+    "static/media/aws.svg": "/portfolio/static/media/aws.fde031e577a3066bb890159ac29a995f.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/react.svg": "/portfolio/static/media/react.03d232abdd426b32fb8e1ee9f48af3f6.svg",
+    "static/media/react-native.svg": "/portfolio/static/media/react-native.19df4041a7c4767ba9dfb2ef654fe858.svg",
+    "static/media/redux.svg": "/portfolio/static/media/redux.119a98013c62a27ad80ace76720c77a5.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.260c8a44e16da59c482fb282f4fef569.svg",
+    "static/media/ts.svg": "/portfolio/static/media/ts.32fb130a1a03eac5cd3d509d5b96f188.svg",
+    "static/media/logo_nav.svg": "/portfolio/static/media/logo_nav.359ace3ffb906197bc9fb718a195cbb3.svg",
+    "static/media/eye.svg": "/portfolio/static/media/eye.8b18c7f9358e57d5c4a124abb36d8e3a.svg",
+    "static/media/resume.svg": "/portfolio/static/media/resume.499e4dbd46ab913a77a21d6be46fa07c.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.c964350a37b9f2500148e99035c79310.svg",
+    "static/media/gmail.svg": "/portfolio/static/media/gmail.dd4be970935c8e0a38ccd1b64a137b20.svg",
+    "static/media/js.svg": "/portfolio/static/media/js.012fac2115bab568edc27f1037766469.svg",
+    "static/media/mui.svg": "/portfolio/static/media/mui.ce9af75156149a3ae5ada85ab134adb5.svg",
+    "static/media/tailwind.svg": "/portfolio/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
+    "main.8588b3a2.css.map": "/portfolio/static/css/main.8588b3a2.css.map",
+    "main.a6d85050.js.map": "/portfolio/static/js/main.a6d85050.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8588b3a2.css",
+    "static/js/main.a6d85050.js"
+  ]
+}
